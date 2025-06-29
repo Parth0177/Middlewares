@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
 
 app.get('/random', (req,res)=>{
   const randomNumber = Math.floor(Math.random() * 100);
-  res.send(`Random number is: ${randomNumber}`);
+  res.send(`Random Number is: ${randomNumber}`);
 })
 
 app.listen(3000,()=>{
