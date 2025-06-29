@@ -7,7 +7,7 @@ app.use((req,res)=>{
 })
 
 app.get('/',(req,res)=>{
-  res.send('Hello Wold!!');
+  res.send('Hello World!!');
 });
 
 app.get('/random', (req,res)=>{
