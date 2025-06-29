@@ -14,7 +14,7 @@ app.get('/',(req,res)=>{
 
 app.get('/random', (req,res)=>{
   const randomNumber = Math.floor(Math.random() * 100);
-  res.send(`Random Number is: ${randomNumber}`);
+  res.send(`Random Number is: ${randomNumber}`); 
 });
 
 app.get('/about', (req,res)=>{
