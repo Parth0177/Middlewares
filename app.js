@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.use((req,res)=>{
-  console.log('This is a middleware function');
+  console.log('This is a middleware function!');
   res.send('Middleware executed!');
 })
 
