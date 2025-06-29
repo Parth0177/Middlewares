@@ -9,7 +9,7 @@ app.use("/api", (req,res,next)=>{
   }else{
     res.status(401).send('Unauthorized access');
   }
-})
+});
 
 app.get('/api', (req,res)=>{
   res.send('data')
