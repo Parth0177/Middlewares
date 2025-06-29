@@ -2,9 +2,15 @@ const express = require('express');
 const app = express();
 
 app.use((req,res,next)=>{
-  console.log('This is a Middleware function!');
+  console.log('This is a 1st Middleware function!');
   next(); // Call next() to pass control to the next middleware or route handler
-})
+});
+
+app.use((req,res,next)=>{
+  console.log('This is a 2st Middleware function!');
+  next(); // Call next() to pass control to the next middleware or route handler
+});
+
 
 app.get('/',(req,res)=>{
   res.send('Hello World!!');
