@@ -3,7 +3,7 @@ const app = express();
 
 app.use((req,res)=>{
   console.log('This is a middleware function');
-  res.send('Middleware executed');
+  res.send('Middleware executed!');
 })
 
 app.get('/',(req,res)=>{
