@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 
-const ExpressError = require('./ExpressError');
 
 
 app.use("/api", (req,res,next)=>{
@@ -9,7 +8,6 @@ app.use("/api", (req,res,next)=>{
   if(token==='giveaccess'){
     next();
   }
-  throw new ExpressError("You don't have access to this API", 403);
 });
 app.get('/wrong',(req,res)=>{
   abcd = abcd ;
