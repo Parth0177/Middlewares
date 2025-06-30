@@ -9,21 +9,7 @@ app.use("/api", (req,res,next)=>{
   if(token==='giveaccess'){
     next();
   }
-  throw new ExpressError("You don't have access to this API", 403);
-});
-app.get('/wrong',(req,res)=>{
-  abcd = abcd ;
-});
-
-app.use((err,req,res,next)=>{
-  console.log("ERROR OCCURED!");
-  next(err);
-});
-
-app.use((err,req,res,next)=>{
-  console.log("ERROR HANDLER!");
-  res.status(500).send('Something went wrong!');
-  next(err);
+  throw new ExpressError("You don't have access to this API", 401);
 });
 
 
